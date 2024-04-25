@@ -117,13 +117,30 @@ public class Lambdas {
 //                        .toList());
 //        out.println(nums);
 
-        List<Integer> numbers = List.of(100, 2, 30, 45, 76,5,5,6,7,8,6,5,4,3);
-       List<Integer> nums = numbers.stream()
-                .distinct()
-               .sorted()
-               .collect(Collectors
-                       .toMap());
-        out.println(nums);
+
+
+//        List<Integer> numbers = List.of(100, 2, 30, 45, 76,5,5,6,7,8,6,5,4,3);
+//       List<Integer> nums = numbers.stream()
+//                .distinct()
+//               .sorted()
+//               .collect(Collectors
+//                       );
+//        out.println(nums);
+
+
+        Set<String> numbers = Set.of("100","2","3000","52423");
+        String joins= numbers.stream().collect(Collectors.joining());
+        out.println(joins);
+
+
+
+
+
+//        Set<String> numbers = Set.of("100","2","3000","52423");
+//        Map<String,Integer> map = numbers.stream().collect(Collectors.toMap(
+//                (element) -> element,(element -> element.length())
+//        ));
+//        out.println(map);
 
 
         //private static void displayNumber(int number){
